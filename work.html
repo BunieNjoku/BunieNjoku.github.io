@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Work — Bunie Njoku</title>
+  <meta name="description" content="Case studies: quantum-network engineering within QD-CamNetz at TU Dresden, and carrier-scale deployment programmes delivered for Nokia.">
+  <meta property="og:title" content="Work — Bunie Njoku">
+  <meta property="og:description" content="Case studies: quantum-network engineering within QD-CamNetz, and carrier-scale Nokia deployment programmes.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://bunienjoku.github.io/assets/img/presenting.jpg">
+  <meta property="og:url" content="https://bunienjoku.github.io/work.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-head">
+    <a class="wordmark" href="index.html#top">B.NJOKU</a>
+    <nav class="site-nav mono" aria-label="Main">
+      <a href="index.html#about">About</a>
+      <a href="work.html" aria-current="page">Work</a>
+      <a href="index.html#research">Research</a>
+    </nav>
+    <span class="head-meta mono"><span id="clock">--:--:--</span> DRESDEN</span>
+  </header>
+
+  <div class="banner">
+    <canvas class="fluid" data-vignette="0.45" aria-hidden="true"></canvas>
+    <div class="banner-inner">
+      <p class="mono banner-crumb"><a class="crumb-link" href="index.html#work">← Index</a> / Work</p>
+      <h1 class="banner-title">Work</h1>
+    </div>
+  </div>
+
+  <main class="page">
+
+    <article class="case reveal" id="qd-camnetz">
+      <header class="case-head">
+        <p class="case-meta mono"><span class="mono-accent">2022–2026</span> · TU Dresden · BMBF-funded</p>
+        <h2>QD-CamNetz</h2>
+        <p class="case-sub">The first 5G quantum campus network.</p>
+      </header>
+      <div class="case-body">
+        <p>
+          QD-CamNetz (<em>Quanten-Drahtloses Campusnetzwerk</em>) is an €8.5M
+          research project led by TU Dresden together with TU München, IFW Dresden,
+          CampusGenius and Deutsche Telekom, funded by the German Federal Ministry
+          of Research. Its objective is the integration of quantum technologies into working
+          5G infrastructure: a campus network capable of serving industrial
+          applications, rather than a bench-top demonstration.
+        </p>
+        <p>
+          My work sits where the quantum layer meets the classical network. I develop
+          the link-layer protocol and toolchain for a three-node quantum-dot photonic
+          testbed, the photon-event processing behind its detection, correlation and
+          validation pipelines, and the orchestration software that handles resource
+          scheduling, telemetry capture and verification workflows across the testbed.
+        </p>
+        <p>
+          The role extends beyond implementation. Stakeholder requirements are
+          converted into interface definitions and acceptance criteria, with
+          traceability maintained from design assumptions to test evidence; the
+          work is documented — interface notes, test procedures, runbooks — to
+          the standard a multi-institution consortium needs for repeatable
+          execution and handover.
+        </p>
+        <p>
+          The governing requirement is determinism. Quantum links acquire value for
+          higher-layer services only when timing is guaranteed. The work therefore
+          emphasizes sub-nanosecond synchronization and shared-randomness
+          extraction, together with operational procedures that treat quantum
+          randomness as a managed resource across the 5G core, radio access and
+          optical segments. Together, these extend the reference architecture
+          toward 6G.
+        </p>
+        <div class="photo-grid">
+          <figure class="figure">
+            <img src="assets/img/qdcamnetz-rack.jpg" alt="Bunie Njoku beside the QUIET and QD-CamNetz equipment racks in the ComNets lab" loading="lazy">
+            <figcaption class="mono">Fig. 01 — QUIET / QD-CamNetz racks, ComNets lab</figcaption>
+          </figure>
+          <figure class="figure">
+            <img src="assets/img/optical-table.jpg" alt="Optical table carrying the photonic setup in the quantum lab" loading="lazy">
+            <figcaption class="mono">Fig. 02 — The optical table</figcaption>
+          </figure>
+        </div>
+        <p class="case-links mono">
+          <a href="https://www.forschung-it-sicherheit-kommunikationssysteme.de/projekte/qd-camnetz" target="_blank" rel="noopener">Project profile ↗</a>
+          <a href="https://tu-dresden.de/ing/informatik/die-fakultaet/news/quantentechnologien-fuer-die-kommunikationsnetze-der-zukunft" target="_blank" rel="noopener">TU Dresden news ↗</a>
+        </p>
+      </div>
+    </article>
+
+    <article class="case reveal" id="nokia-airtel">
+      <header class="case-head">
+        <p class="case-meta mono"><span class="mono-accent">2018–2021</span> · Nokia ION / Centdoor · Nigeria</p>
+        <h2>Nokia–Airtel IP-Microwave Pilot</h2>
+        <p class="case-sub">Multi-site carrier connectivity, from radio to routing.</p>
+      </header>
+      <div class="case-body">
+        <p>
+          A carrier-scale deployment programme integrating IP/MPLS edge routing,
+          Ethernet switching and microwave transport for Airtel's multi-site
+          network. Over the course of the programme I brought 400+ edge routers, switches and
+          microwave radios into service across the access layer.
+        </p>
+        <p>
+          Scale imposed its own rigour: 250+ device integrations were
+          consolidated into a repeatable automation pipeline, with onsite and
+          remote customer engineering closing the loop between incidents in the
+          field and improvements to the process.
+        </p>
+      </div>
+    </article>
+
+    <article class="case reveal" id="nokia-aggregation">
+      <header class="case-head">
+        <p class="case-meta mono"><span class="mono-accent">2018–2021</span> · Nokia ION / Centdoor · Nigeria</p>
+        <h2>Service-Aware Aggregation Expansion</h2>
+        <p class="case-sub">Growing a live backbone without dropping traffic.</p>
+      </header>
+      <div class="case-body">
+        <p>
+          Capacity expansion across the access and aggregation tiers of a network
+          under continuous commercial load. Two backbone upgrades took the core
+          from 10/40 to 100/400 Gbit/s across six sites and twelve routers; two WAN-SDN
+          platform upgrades on Nokia NSP improved provisioning and telemetry along
+          the way.
+        </p>
+        <p>
+          The defining discipline was migration: 25+ end-to-end traffic cutovers,
+          each planned, risk-assessed and executed with near-zero service impact,
+          alongside 20+ firmware rollouts that kept the switch fleet current
+          without operational surprises.
+        </p>
+      </div>
+    </article>
+
+    <section class="case reveal" id="network">
+      <header class="case-head">
+        <p class="case-meta mono"><span class="mono-accent">Network</span> · Dresden and beyond</p>
+        <h2>Projects &amp; partners</h2>
+        <p class="case-sub">The ecosystem around QD-CamNetz.</p>
+      </header>
+      <div class="case-body">
+        <p>
+          QD-CamNetz is conducted within an ecosystem of quantum-communication
+          initiatives and industry partnerships that share the laboratory, the
+          infrastructure and the roadmap.
+        </p>
+        <ul class="partners">
+          <li><span class="partner-name">T-Labs</span><span class="mono">Industry partner</span></li>
+          <li><span class="partner-name">TU München</span><span class="mono">Project partner</span></li>
+          <li><span class="partner-name">QUIET</span><span class="mono">Affiliated project</span></li>
+          <li><span class="partner-name">QUARKS</span><span class="mono">Affiliated project</span></li>
+          <li><span class="partner-name">QsyncNextG</span><span class="mono">Affiliated project</span></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-foot">
+    <div class="foot-contact">
+      <a class="foot-mail" href="mailto:bunienjoku@gmail.com">bunienjoku@gmail.com</a>
+      <ul class="id-links mono">
+        <li><a href="https://github.com/BunieNjoku" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://gitlab.mn.tu-dresden.de/bunj231e" target="_blank" rel="noopener">GitLab / TUD</a></li>
+        <li><a href="https://www.linkedin.com/in/bunie-njoku/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://scholar.google.de/citations?user=Kad4-u8AAAAJ" target="_blank" rel="noopener">Scholar</a></li>
+      </ul>
+      <p class="id-meta mono">© 2026 Bunie Njoku — Dresden, DE</p>
+    </div>
+  </footer>
+
+  <script src="js/fluid.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
