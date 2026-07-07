@@ -136,13 +136,6 @@ canvas.fluid {
   padding: 0 clamp(1.25rem, 2.5vw, 2.5rem);
 }
 
-.kicker {
-  color: var(--accent);
-  margin-bottom: 1rem;
-  max-width: 26rem;
-  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.85);
-}
-
 .name {
   font-size: clamp(3.4rem, 7.5vw, 6.5rem);
   font-weight: 850;
@@ -264,9 +257,12 @@ canvas.fluid {
 }
 
 .banner-crumb {
+  display: inline-block;
   color: var(--accent);
   margin-bottom: 0.5rem;
-  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.85);
+  padding: 0.35rem 0.6rem;
+  background: rgba(11, 11, 12, 0.82);
+  border: 1px solid var(--line);
 }
 
 .crumb-link { transition: color 160ms ease; }
