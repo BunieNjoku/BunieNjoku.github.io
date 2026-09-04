@@ -1,0 +1,4 @@
+.DS_Store
+
+# source photographs (originals stay local; the site uses assets/img)
+photos/

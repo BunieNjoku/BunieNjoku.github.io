@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research | Bunie Njoku</title>
+  <meta name="description" content="Research on quantum resources in operational networks: entanglement allocation, security services, time synchronization and privacy-preserving distributed learning.">
+  <meta name="theme-color" content="#0b0b0c">
+  <meta property="og:title" content="Research | Bunie Njoku">
+  <meta property="og:description" content="Research on quantum resources in operational networks.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://bunienjoku.github.io/assets/img/presenting.jpg">
+  <meta property="og:url" content="https://bunienjoku.github.io/research.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://bunienjoku.github.io/research.html">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preload" href="assets/fonts/archivo-300-900-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/ibm-plex-mono-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-head">
+    <a class="wordmark" href="index.html#top">B.NJOKU</a>
+    <nav class="site-nav mono" aria-label="Main">
+      <a href="index.html#about">About</a>
+      <a href="index.html#work">Work</a>
+      <a href="research.html" aria-current="page">Research</a>
+    </nav>
+    <span class="head-meta mono"><span id="clock">--:--:--</span></span>
+  </header>
+
+  <div class="banner">
+    <canvas class="fluid" data-vignette="0.45" aria-hidden="true"></canvas>
+    <div class="banner-inner">
+      <p class="mono banner-crumb"><a class="crumb-link" href="index.html#research">← Index</a> / Research</p>
+      <h1 class="banner-title">Research</h1>
+    </div>
+  </div>
+
+  <main class="page" id="main">
+
+    <section class="case reveal">
+      <header class="case-head">
+        <p class="case-meta mono"><span class="mono-accent">Dr.-Ing. candidate</span> · TU Dresden</p>
+        <h2>From experiment to service</h2>
+        <p class="case-sub">Operational questions applied to quantum links.</p>
+      </header>
+      <div class="case-body">
+        <p>
+          The physics of quantum communication is ahead of its operations.
+          Entanglement can be distributed and keys can be exchanged, but
+          mostly under controlled conditions and by the people who built the
+          apparatus. My research asks the questions a network operator would
+          ask next: how a quantum resource is provisioned, how its quality
+          is measured and its degradation detected, how it is allocated when
+          demand exceeds supply, and what guarantees can be attached to it.
+        </p>
+        <p>
+          I approach these questions from the systems side, through the
+          engineering built for
+          <a class="inline-link" href="work.html#qd-camnetz">QD-CamNetz</a>:
+          resource orchestration, verification workflows and the timing
+          infrastructure that deterministic services depend on. I treat the
+          quantum layer as a component like any other, with an interface, a
+          failure model and a cost.
+        </p>
+        <p>
+          The other half of the question is what the resource is used for.
+          My test case is distributed machine learning: a quantum-secured
+          architecture where entanglement-derived keys protect federated
+          training traffic across a fibre mesh. It is benchmarked against
+          state-of-the-art secure aggregation and, in full-stack simulation,
+          withstands harvest-now-decrypt-later and eavesdropping attacks
+          that break the classical cryptographic baseline.
+        </p>
+      </div>
+    </section>
+
+    <section class="case reveal">
+      <header class="case-head">
+        <p class="case-meta mono"><span class="mono-accent">Themes</span> · Four threads</p>
+        <h2>Lines of inquiry</h2>
+      </header>
+      <div class="case-body">
+        <div class="entry" id="entanglement">
+          <h3>Entanglement as an allocatable resource</h3>
+          <p>
+            Entanglement is consumed by use, degrades in storage and cannot be
+            copied. No classical resource management model accounts for
+            those properties. This thread looks at how quantum-classical
+            networks should use and share entanglement, and how its scarcity
+            changes the behaviour of the parties that depend on it.
+          </p>
+        </div>
+        <div class="entry" id="security">
+          <h3>Security and randomness as network services</h3>
+          <p>
+            A network that produces quantum randomness and quantum-secured keys
+            gains new service classes, and with them new engineering
+            questions. These include efficient error-rate estimation in quantum
+            key distribution, quantum entropy pools with provable properties for
+            cryptographic applications, and quantum-resistant architectures for
+            constrained IoT devices that will never terminate a quantum link of
+            their own.
+          </p>
+        </div>
+        <div class="entry" id="fl">
+          <h3>Privacy-preserving federated learning</h3>
+          <p>
+            Federated learning keeps training data off the wire, but gradients
+            still cross it, and that traffic is what a
+            harvest-now-decrypt-later adversary records today. This thread
+            asks what changes when key material comes from an entanglement
+            source on the same network: how secure aggregation combines with
+            quantum-derived keys, what the throughput and scheduling costs
+            are, and which guarantees still hold on an operational network.
+          </p>
+        </div>
+        <div class="entry" id="timing">
+          <h3>Time synchronization</h3>
+          <p>
+            Every guarantee in the other threads depends on synchronization.
+            This thread covers the design tradeoffs of quantum time
+            synchronization for industrial networks, and the
+            entanglement-derived mechanisms, at 7 picoseconds average
+            precision in simulation, that let a distributed testbed behave
+            as a single deterministic system. Three patent applications
+            filed with Deutsche Telekom T-Labs take that result toward
+            GNSS-independent timing for coherent joint transmission in
+            5G-Advanced and 6G radio networks.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="case reveal" id="publications">
+      <header class="case-head">
+        <p class="case-meta mono"><span class="mono-accent">Record</span> · Selected papers</p>
+        <h2>Publications</h2>
+        <p class="case-sub">Three selected papers. The full list is on Google Scholar.</p>
+      </header>
+      <div class="case-body">
+        <div class="entry">
+          <span class="entry-when mono">2025</span>
+          <h3>Quantum entanglement resource utilization in quantum-classical networking</h3>
+        </div>
+        <div class="entry">
+          <span class="entry-when mono">2024</span>
+          <h3>An Efficient Error Estimation Method in Quantum Key Distribution</h3>
+        </div>
+        <div class="entry">
+          <span class="entry-when mono">2024</span>
+          <h3>Assessing the Impact of Entanglement on Strategic Choices in Quantum Communication Networks</h3>
+        </div>
+        <p class="case-links mono">
+          <a href="https://scholar.google.de/citations?user=Kad4-u8AAAAJ" target="_blank" rel="noopener">Google Scholar ↗</a>
+          <a href="work.html#patents">Patents →</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="case reveal" id="qd-entanglement-fl">
+      <header class="case-head">
+        <p class="case-meta mono"><span class="mono-accent">Software</span> · Simulation code</p>
+        <h2>qd-entanglement-fl</h2>
+        <p class="case-sub">Code from the federated learning research.</p>
+      </header>
+      <div class="case-body">
+        <p>
+          The simulation package behind the quantum-secured federated
+          learning work. Quantum-dot Bell pairs distributed over a
+          campus-scale fibre mesh provision the pairwise masks of
+          Bonawitz-style secure aggregation, with BBM92 as the default
+          protocol framing.
+        </p>
+        <p>
+          The pipeline covers the full stack: source characterization,
+          sifting, reconciliation and privacy amplification, mesh topology,
+          hierarchical aggregation with dropout recovery,
+          harvest-now-decrypt-later experiments, and classical baselines
+          for comparison.
+        </p>
+        <p class="case-links mono">
+          <a href="https://github.com/BunieNjoku/qd-entanglement-fl" target="_blank" rel="noopener">Source on GitHub ↗</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="case reveal" id="open5gs">
+      <header class="case-head">
+        <p class="case-meta mono"><span class="mono-accent">Software</span> · Applied output</p>
+        <h2>open5gs-qrandom-mod</h2>
+        <p class="case-sub">Software from the randomness research.</p>
+      </header>
+      <div class="case-body">
+        <p>
+          A modified build of Open5GS, a widely used open source 5G core,
+          that takes its entropy from quantum random number generation. It
+          answers a practical question: if the network produces quantum
+          randomness, where does standard core-network software actually
+          consume it?
+        </p>
+        <p class="case-links mono">
+          <a href="https://github.com/BunieNjoku/open5gs-qrandom-mod" target="_blank" rel="noopener">Source on GitHub ↗</a>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-foot">
+    <div class="foot-contact">
+      <a class="foot-mail" href="mailto:bunienjoku@gmail.com">bunienjoku@gmail.com</a>
+      <p class="foot-phone mono"><a href="tel:+13652929942">+1 365 292 9942</a></p>
+      <ul class="id-links mono">
+        <li><a href="https://github.com/BunieNjoku" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://gitlab.mn.tu-dresden.de/bunj231e" target="_blank" rel="noopener">GitLab / TUD</a></li>
+        <li><a href="https://www.linkedin.com/in/bunie-njoku/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://scholar.google.de/citations?user=Kad4-u8AAAAJ" target="_blank" rel="noopener">Scholar</a></li>
+      </ul>
+      <p class="id-meta mono">© 2026 Bunie Njoku</p>
+    </div>
+  </footer>
+
+  <script src="js/fluid.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
