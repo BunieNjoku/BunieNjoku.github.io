@@ -35,7 +35,7 @@
   <div class="banner">
     <canvas class="fluid" data-vignette="0.45" aria-hidden="true"></canvas>
     <div class="banner-inner">
-      <p class="mono banner-crumb"><a class="crumb-link" href="index.html#research">← Index</a> / Research</p>
+      <p class="mono banner-crumb"><a class="crumb-link" href="index.html#research">← Home</a> / Research</p>
       <h1 class="banner-title">Research</h1>
     </div>
   </div>
@@ -69,12 +69,8 @@
         </p>
         <p>
           The other half of the question is what the resource is used for.
-          My test case is distributed machine learning: a quantum-secured
-          architecture where entanglement-derived keys protect federated
-          training traffic across a fibre mesh. It is benchmarked against
-          state-of-the-art secure aggregation and, in full-stack simulation,
-          withstands harvest-now-decrypt-later and eavesdropping attacks
-          that break the classical cryptographic baseline.
+          My test case is federated learning across a fibre mesh, with keys
+          drawn from the same entanglement source.
         </p>
       </div>
     </section>
@@ -110,13 +106,15 @@
         <div class="entry" id="fl">
           <h3>Privacy-preserving federated learning</h3>
           <p>
-            Federated learning keeps training data off the wire, but gradients
-            still cross it, and that traffic is what a
-            harvest-now-decrypt-later adversary records today. This thread
-            asks what changes when key material comes from an entanglement
-            source on the same network: how secure aggregation combines with
-            quantum-derived keys, what the throughput and scheduling costs
-            are, and which guarantees still hold on an operational network.
+            Training data stays local, but gradients cross the network, and
+            that traffic is what a harvest-now-decrypt-later adversary
+            records today. Entanglement-derived keys mask the gradients in
+            secure aggregation. Benchmarked against state-of-the-art
+            methods in full-stack simulation, the pipeline withstands
+            harvest-now-decrypt-later and eavesdropping attacks that break
+            the classical baseline. Open questions are throughput,
+            scheduling cost and which guarantees hold on an operational
+            network.
           </p>
         </div>
         <div class="entry" id="timing">
@@ -170,18 +168,12 @@
       </header>
       <div class="case-body">
         <p>
-          The simulation package behind the quantum-secured federated
-          learning work. Quantum-dot Bell pairs distributed over a
-          campus-scale fibre mesh provision the pairwise masks of
-          Bonawitz-style secure aggregation, with BBM92 as the default
-          protocol framing.
-        </p>
-        <p>
-          The pipeline covers the full stack: source characterization,
-          sifting, reconciliation and privacy amplification, mesh topology,
-          hierarchical aggregation with dropout recovery,
-          harvest-now-decrypt-later experiments, and classical baselines
-          for comparison.
+          Simulator in which quantum-dot Bell pairs over a campus fibre
+          mesh provision the pairwise masks of Bonawitz-style secure
+          aggregation, with BBM92 as the default protocol framing. It
+          models source characterization, sifting, reconciliation and
+          privacy amplification, mesh topology, hierarchical aggregation
+          with dropout recovery, and classical baselines for comparison.
         </p>
         <p class="case-links mono">
           <a href="https://github.com/BunieNjoku/qd-entanglement-fl" target="_blank" rel="noopener">Source on GitHub ↗</a>
