@@ -814,13 +814,6 @@ canvas.fluid {
 
 .figure picture { display: block; }
 
-/* ---------- footer contact details ---------- */
-
-.foot-phone { margin-bottom: 1.25rem; }
-
-.foot-phone a { color: var(--ink); transition: color 160ms ease; }
-.foot-phone a:hover { color: var(--accent); }
-
 /* ---------- interactive affordances ---------- */
 
 .cell-more {
@@ -846,8 +839,7 @@ canvas.fluid {
 
 .row:hover { background: color-mix(in srgb, var(--accent) 6%, transparent); }
 
-.id-links a,
-.foot-phone a {
+.id-links a {
   border-bottom: 1px solid color-mix(in srgb, var(--accent) 55%, transparent);
   padding-bottom: 1px;
 }
