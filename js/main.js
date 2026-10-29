@@ -1,17 +1,3 @@
-// clock in the header, in the reader's own time zone
-const clock = document.getElementById("clock");
-
-function tick() {
-  clock.textContent = new Date().toLocaleTimeString("en-GB", {
-    hour12: false,
-  });
-}
-
-if (clock) {
-  tick();
-  setInterval(tick, 1000);
-}
-
 // reveal sections as they scroll into view
 const revealed = document.querySelectorAll(".reveal");
 
